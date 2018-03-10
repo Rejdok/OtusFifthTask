@@ -17,5 +17,7 @@ deploy:
     github-token: $GITHUB_TOKEN 
     keep-history: false
     local-dir: doxygen/html/
+    edge:
+        branch: v1.8.47
     on:
       branch: master
