@@ -12,25 +12,21 @@ struct GraphicalPrimitive {
 public:
 	GraphicalPrimitive() {}
 };
-
 struct Point:GraphicalPrimitive {
 	int x = 0;
 	int y = 0;
 };
 
-class LineSegment :GraphicalPrimitive {
+
+struct LineSegment :GraphicalPrimitive {
 	LineSegment(Point a, Point b) {}
 	Point a, b;
 };
-
-class Triangle :GraphicalPrimitive {
+struct Triangle :GraphicalPrimitive {
 	Triangle(Point a, Point b, Point c);
 	Point a, b, c;
 };
-
-class Rectangle : GraphicalPrimitive {
+struct Rectangle : GraphicalPrimitive {
 	Rectangle(Point a, Point b) {}
 	Point a, b;
 };
-
-
