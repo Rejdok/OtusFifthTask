@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <string>
 #include <utility>
@@ -17,9 +17,9 @@ public:
 	void loadFromFile(std::string path, FileFormats ff) {
 		ph.loadFromFile(path, ff);
 	}
-	template<typename T, typename... Args>
-	void createPrimitive(T, Args...) {
-		ph.createPrimitive(T, Args...);
+	template<typename... Args>
+	void createPrimitive(PTypes PType, Args... args) {
+		ph.createPrimitive(PType, args...);
 	}
 	void deletePrimitive(GraphicalPrimitive* toDelete) {
 		ph.deletePrimitive(toDelete);

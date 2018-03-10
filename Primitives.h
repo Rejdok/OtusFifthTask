@@ -4,6 +4,9 @@ enum class FileFormats
 {
 	FF1, FF2, undef
 };
+enum class PTypes{
+	Point, LineSegment,Triangle,Rectangle
+};
 struct Point {
 	int x = 0;
 	int y = 0;
@@ -11,9 +14,7 @@ struct Point {
 
 class GraphicalPrimitive {
 public:
-	virtual void save() = 0;
-	virtual void load() = 0;
-	virtual  ~GraphicalPrimitive() {}
+	GraphicalPrimitive() {}
 };
 
 class LineSegment :GraphicalPrimitive {

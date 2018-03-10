@@ -10,9 +10,9 @@ class GUI {
 public:
 	GUI();
 	~GUI();
-	template<typename T, typename... Args>
-	void AddNewPrimitive(T, Args...) {
-		controller->createPrimitive(T, Args...);
+	template<typename... Args>
+	void AddNewPrimitive(PTypes PType, Args... args) {
+		controller->createPrimitive(PType, args...);
 	}
 	GraphicalPrimitive* selectPrimitive() {
 		//чисто для демострации того, что примитив может быть выбран
