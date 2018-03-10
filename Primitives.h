@@ -8,7 +8,7 @@ enum class PTypes{
 	Point, LineSegment,Triangle,Rectangle
 };
 
-class GraphicalPrimitive {
+struct GraphicalPrimitive {
 public:
 	GraphicalPrimitive() {}
 };
