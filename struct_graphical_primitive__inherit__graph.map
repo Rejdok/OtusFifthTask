@@ -1,0 +1,6 @@
+<map id="GraphicalPrimitive" name="GraphicalPrimitive">
+<area shape="rect" id="node2" href="$struct_line_segment.html" title="LineSegment" alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$struct_point.html" title="Point" alt="" coords="129,80,180,107"/>
+<area shape="rect" id="node4" href="$struct_rectangle.html" title="Rectangle" alt="" coords="205,80,285,107"/>
+<area shape="rect" id="node5" href="$struct_triangle.html" title="Triangle" alt="" coords="310,80,377,107"/>
+</map>
